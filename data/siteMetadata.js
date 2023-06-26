@@ -4,7 +4,7 @@ const siteMetadata = {
   headerTitle: 'Charlie Duong',
   description: 'Welcome to my site!',
   language: 'en-us',
-  theme: 'system', // system, dark or light
+  theme: 'light', // system, dark or light
   siteUrl: 'https://cduong.dev',
   siteRepo: 'https://github.com/CDuong04',
   siteLogo: '/static/images/logo.png',
