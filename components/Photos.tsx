@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import clsx from 'clsx';
 
-import image1 from 'public/static/images/sf1.JPG';
+import image1 from 'public/static/images/sf1.png';
 import image2 from 'public/static/images/nyc.png';
-import image3 from 'public/static/images/sf2.JPG';
+import image3 from 'public/static/images/sf2.png';
 
 export default function Photos() {
   // const rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2'];
