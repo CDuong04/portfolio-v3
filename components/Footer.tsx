@@ -2,9 +2,10 @@ import siteMetadata from '@/data/siteMetadata';
 import Link from 'next/link';
 import { Suspense } from 'react';
 import { AiFillLinkedin } from 'react-icons/ai';
-import { FaGithub, FaSpotify, FaSteam, FaTwitter } from 'react-icons/fa';
+import { FaGithub, FaSpotify, FaTwitter } from 'react-icons/fa';
 import SectionContainer from './SectionContainer';
 import NowPlaying from './Spotify/NowPlaying';
+import SocialIcon from './SocialIcons';
 
 export default function Footer() {
   return (
@@ -15,13 +16,6 @@ export default function Footer() {
             <NowPlaying />
           </Suspense>
           <div className="flex flex-col items-center space-y-2 text-sm sm:flex-row sm:justify-between sm:text-base">
-            <ul className="flex space-x-2">
-              <li>{`© ${new Date().getFullYear()}`}</li>
-              <li>{` • `}</li>
-              <li>
-                <Link href="/">{siteMetadata.title}</Link>
-              </li>
-            </ul>
             <ul className="flex cursor-pointer items-center space-x-5">
               <li>
                 <a
@@ -58,10 +52,13 @@ export default function Footer() {
                   <FaSpotify className="sm:text-lg" />
                 </a>
               </li>
+            </ul>
+            <ul className="flex space-x-2">
+              {/* <li>{`© ${new Date().getFullYear()}`}</li> */}
+              <li>Made with &#10084;</li>
+              <li>{` • `}</li>
               <li>
-                <a href={siteMetadata.steam} target="_blank" rel="noreferrer" aria-label="steam">
-                  <FaSteam className="sm:text-lg" />
-                </a>
+                <Link href="/">{siteMetadata.title}</Link>
               </li>
             </ul>
           </div>

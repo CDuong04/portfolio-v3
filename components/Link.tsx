@@ -13,8 +13,10 @@ const CustomLink = ({
 
   if (isInternalLink) {
     return (
-      <Link href={href} legacyBehavior>
+      <Link className="underline-magical" href={href} legacyBehavior>
         <LinkButton {...rest} />
+        {/* <Link {...rest} /> */}
+        {/* {...rest} */}
       </Link>
     );
   }

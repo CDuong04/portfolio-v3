@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 'use client';
 
 import { motion } from 'framer-motion';
@@ -6,6 +7,7 @@ import { ReactElement, useContext, useEffect, useRef } from 'react';
 import { HiOutlineArrowNarrowDown } from 'react-icons/hi';
 import { ScrollContext } from './Providers/ScrollProvider';
 import { renderCanvas } from './renderCanvas';
+import Typing from './Typing';
 
 export default function Hero(): ReactElement {
   const ref = useRef<HTMLHeadingElement>(null);
@@ -17,16 +19,13 @@ export default function Hero(): ReactElement {
   if (elContainer) {
     progress = Math.min(1, scrollY / elContainer.clientHeight);
   }
-
   useEffect(() => {
     renderCanvas();
   }, []);
 
   return (
     <div>
-      <h1 className="sr-only">
-        Hello I'm Dale Larroder, I'm a software developer, and I love building things for the web.
-      </h1>
+      <h1 className="sr-only">Hey! I'm Charlie Duong, I'm a software engineer and researcher.</h1>
       <motion.div
         className="relative z-10 flex h-[calc(100vh-81px)] items-center md:h-[calc(100vh-116px)]"
         animate={{
@@ -38,10 +37,23 @@ export default function Hero(): ReactElement {
           <div className="-mt-36">
             <div ref={ref} className="flex cursor-default flex-col space-y-2">
               <h1 className="text-5xl font-semibold sm:text-7xl md:text-8xl xl:text-9xl">
-                Dale Larroder
+                Charlie Duong
               </h1>
               <h2 className="text-3xl font-medium opacity-80 sm:text-6xl md:text-6xl xl:text-7xl">
-                I build things for the web.
+                <Typing>
+                  {[
+                    "I'm a software engineer",
+                    "I'm a researcher",
+                    'I do math',
+                    'I train models',
+                    'I lift weights',
+                    'I stack colorful blocks',
+                    'I explore cities',
+                    'I love music',
+                    'I mix drinks',
+                    "I'm happy you stopped by 👋",
+                  ]}
+                </Typing>
               </h2>
               <Link
                 href="/about"

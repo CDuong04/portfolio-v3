@@ -20,13 +20,17 @@ export default function Header() {
             <Link href="/" className="flex items-center justify-between" aria-label="Home">
               <div
                 className={classNames(
-                  'horizontal-underline hidden text-3xl font-extrabold sm:block',
-                  {
-                    'horizontal-underline-active': pathName === '/',
-                  }
+                  'horizontal-underline hidden text-2xl font-extrabold text-primary-400 sm:block'
                 )}
               >
-                d.
+                {`~/cduong${pathName}`} <div className="logo__cursor"></div>
+                {/* <Typewriter
+                  options={{
+                    strings: [],
+                    autoStart: true,
+                    loop: true,
+                  }}
+                /> */}
               </div>
             </Link>
           </div>

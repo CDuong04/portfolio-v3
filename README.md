@@ -1,4 +1,4 @@
-# dalelarroder.com ⚡️
+# cduong.dev ⚡️
 
 - **Framework**: [Next.js](https://nextjs.org/)
 - **Deployment**: [Vercel](https://vercel.com)
@@ -75,4 +75,4 @@ Prevoius v1 version:
 
 ## Licence
 
-[MIT](https://github.com/dlarroder/dalelarroder/blob/master/LICENSE) © [Dale Larroder](https://www.dalelarroder.com)
+[MIT](https://github.com/dlarroder/dalelarroder/blob/master/LICENSE) © [Charlie Duong](https://www.dalelarroder.com)

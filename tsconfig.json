@@ -36,7 +36,9 @@
     "**/*.tsx",
     "**/**/*.tsx|ts",
     ".contentlayer/generated",
-    ".next/types/**/*.ts"
+    ".next/types/**/*.ts",
+    "components/SocialIcons/index.js",
+    "components/SocialIcons/nonHref.js"
   ],
   "exclude": ["node_modules"]
 }
