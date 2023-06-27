@@ -44,13 +44,12 @@ export default function Hero(): ReactElement {
                   {[
                     "I'm a software engineer",
                     "I'm a researcher",
-                    'I do math',
+                    'I study math',
                     'I train models',
                     'I lift weights',
                     'I stack colorful blocks',
                     'I explore cities',
                     'I love music',
-                    'I mix drinks',
                     "I'm happy you stopped by 👋",
                   ]}
                 </Typing>
