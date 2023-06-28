@@ -55,7 +55,7 @@ export default function Footer() {
             </ul>
             <ul className="flex space-x-2">
               {/* <li>{`© ${new Date().getFullYear()}`}</li> */}
-              <li>Made with &#10084;</li>
+              <li>Made with &#129483;</li>
               <li>{` • `}</li>
               <li>
                 <Link href="/">{siteMetadata.title}</Link>
