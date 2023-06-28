@@ -24,13 +24,6 @@ export default function Header() {
                 )}
               >
                 {`~/cduong${pathName}`} <div className="logo__cursor"></div>
-                {/* <Typewriter
-                  options={{
-                    strings: [],
-                    autoStart: true,
-                    loop: true,
-                  }}
-                /> */}
               </div>
             </Link>
           </div>
