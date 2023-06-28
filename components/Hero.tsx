@@ -49,7 +49,8 @@ export default function Hero(): ReactElement {
                     'I lift weights',
                     'I stack colorful blocks',
                     'I explore cities',
-                    'I love music',
+                    'I vibe to kpop',
+                    'I vibe to edm',
                     "I'm happy you stopped by 👋",
                   ]}
                 </Typing>
